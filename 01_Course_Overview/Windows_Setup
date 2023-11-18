@@ -1,0 +1,56 @@
+# DevOps Course - Tool Installation Instructions (Windows)
+
+In this course, we will use several essential DevOps tools on Windows. Follow these instructions to install the required tools:
+
+## 1. Git Installation:
+
+Install Git for Windows by downloading and running the installer from the official website: [Git for Windows](https://gitforwindows.org/).
+
+## 2. Docker Desktop Installation:
+
+Docker Desktop for Windows provides both Docker and Docker Compose.
+
+- Download and install Docker Desktop for Windows from the official website: [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop).
+
+## 3. Minikube Installation:
+
+Minikube allows you to run a local Kubernetes cluster on Windows.
+
+- Download and install Minikube from the official website: [Minikube](https://minikube.sigs.k8s.io/docs/start/).
+
+## 4. Ansible Installation:
+
+To install Ansible on Windows, you can use Windows Subsystem for Linux (WSL) or install it within a Linux virtual machine (VM).
+
+### Option 1: Install Ansible on WSL:
+
+1. Install WSL 2: Follow the official Microsoft documentation to install WSL 2: [Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install).
+
+2. Install a Linux distribution (e.g., Ubuntu) from the Microsoft Store.
+
+3. Open the Linux terminal and install Ansible:
+
+   ```shell
+   sudo apt update
+   sudo apt install ansible
+   ```
+
+### Option 2: Install Ansible in a Linux VM:
+
+1. Install a virtualization tool like VirtualBox or VMware Workstation.
+
+2. Create a Linux virtual machine (e.g., Ubuntu) and install Ansible within the VM.
+
+## 5. Terraform Installation:
+
+To install Terraform on Windows, download the Windows binary from the official website:
+
+- Download the Terraform Windows 64-bit zip package: [Terraform Downloads](https://www.terraform.io/downloads.html).
+
+- Extract the zip package, and add the `terraform.exe` executable to your system's PATH.
+
+## 6. AWS CLI Installation:
+
+Install the AWS Command Line Interface (CLI) for Windows by downloading and running the installer from the official website: [AWS CLI Installer for Windows](https://aws.amazon.com/cli/).
+
+After completing these steps, you should have all the necessary tools installed on your Windows system for your DevOps course. You can verify their installations by running the respective commands (e.g., `docker --version`, `minikube version`, `ansible --version`, `terraform --version`, `aws --version`) in your command prompt or PowerShell.

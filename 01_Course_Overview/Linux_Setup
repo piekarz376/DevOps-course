@@ -1,0 +1,59 @@
+# DevOps Course - Tool Installation Instructions (Ubuntu)
+
+In this course, we will use several essential DevOps tools on Ubuntu. Follow these updated instructions to install the required tools on Ubuntu.
+
+## Ubuntu Family:
+
+### 1. Git Installation:
+
+Install Git on Ubuntu using the `apt` package manager:
+
+```shell
+sudo apt update
+sudo apt install git
+```
+
+### 2. Docker Installation:
+
+Install Docker on Ubuntu:
+
+```shell
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+### 3. Minikube Installation:
+
+Minikube can be installed on Ubuntu. Follow the official Minikube installation instructions: [Minikube Installation](https://minikube.sigs.k8s.io/docs/start/).
+
+### 4. Ansible Installation:
+
+Install Ansible on Ubuntu:
+
+```shell
+sudo apt update
+sudo apt install ansible
+```
+
+### 5. Terraform Installation:
+
+To install Terraform on Ubuntu, download the Linux binary from the official website:
+
+```shell
+wget https://releases.hashicorp.com/terraform/<version>/terraform_<version>_linux_amd64.zip
+unzip terraform_<version>_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+```
+
+### 6. AWS CLI Installation:
+
+Install the AWS Command Line Interface (CLI) on Ubuntu:
+
+```shell
+sudo apt update
+sudo apt install awscli
+```
+
+After completing these steps, you should have all the necessary tools installed on your Ubuntu system for your DevOps course. You can verify their installations by running the respective commands (e.g., `docker --version`, `minikube version`, `ansible --version`, `terraform --version`, `aws --version`) in your terminal.
